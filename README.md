@@ -4,5 +4,5 @@ Bedrock is a collection of Sass partials upon which all of the Department of Env
 
 Install using npm:
 
-    $ npm install --save-dev https://bitbucket.org/dewnrinternet/bedrock.git
+    $ npm install --save-dev dewnr-bedrock
 
