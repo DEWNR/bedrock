@@ -1,0 +1,74 @@
+/*------------------------------------*\
+    #SPECIFIC SETTINGS
+\*------------------------------------*/
+
+/**
+ * Global settings that have specific uses, such as controlling which classes 
+ * are output or the design of a particular object or component.
+ **/
+
+/**
+ * WARNING
+ *
+ * These settings should rarely be changed directly, as this may have 
+ * far-reaching consequences. Instead, redefine variables series/group/site
+ * level.
+ **/
+
+
+/* = BASE = */
+
+/* == HEADINGS == */
+
+/** 
+ * 1. Try to ensure the header sizes fit closely to the base spacing and
+ *    base font size so they don't require large line heights to conform to the 
+ *    baseline grid. The last three headers can use the standard font size as 
+ *    they are rarely used.
+ **/
+
+$sagovau-h1-settings: (
+    color: $sagovau-color-brand,
+    font-family: $sagovau-font-family-highlight,
+    font-size: 2 * $sagovau-line-height-base,    /* [1] */
+    font-weight: normal
+);
+$sagovau-h2-settings: (
+    color: $sagovau-color-brand,
+    font-family: $sagovau-font-family-highlight,
+    font-size: 2 * $sagovau-font-size-base,    /* [1] */
+    font-weight: normal
+);
+$sagovau-h3-settings: (
+    color: $sagovau-color-brand,
+    font-family: $sagovau-font-family-highlight,
+    font-size: $sagovau-line-height-base,    /* [1] */
+    font-weight: normal
+);
+$sagovau-h4-settings: (
+    color: $sagovau-color-brand,
+    font-family: $sagovau-font-family-highlight,
+    font-size: $sagovau-font-size-base,    /* [1] */
+    font-weight: bold,
+    text-transform: uppercase
+);
+$sagovau-h5-settings: (
+    font-size: $sagovau-font-size-base,    /* [1] */
+    font-weight: bold,
+    text-transform: uppercase
+);
+$sagovau-h6-settings: (
+    font-size: $sagovau-font-size-base,    /* [1] */
+    font-weight: normal,
+    text-transform: uppercase
+);
+
+
+
+
+
+/* = TRUMPS = */
+
+/* === DISPLAY HELPERS == */
+
+$sagovau-enable-display-helpers-responsive: true;

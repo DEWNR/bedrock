@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #BLOCKQUOTE
+\*------------------------------------*/
+
+/**
+ * Generic blockquote styling.
+ */
+
+$sagovau-blockquote-use-brand-secondary: false !default;
+ 
+blockquote {
+    $sagovau-blockquote-color: $sagovau-color-brand--light;
+    
+    @if ($sagovau-blockquote-use-brand-secondary == true) {
+    
+        $sagovau-blockquote-color: $sagovau-color-brand-secondary--light;
+    
+    }
+    
+    @include inuit-font-size($sagovau-font-size-base--large);
+    border-left: solid $sagovau-blockquote-color $sagovau-spacing-unit-base * 1/3;
+    padding-left: $sagovau-spacing-unit-base * 2/3;
+}

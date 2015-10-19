@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+
+/**
+ * Basic table styling.
+ */
+
+th, td {
+    border: 1px solid $sagovau-color-brand--light;
+    padding: $sagovau-spacing-unit-base--small;
+    
+    & > * :last-child {
+        margin-bottom: 0;
+    }
+}
+
+th {
+    background-color: $sagovau-color-brand--light;
+    font-weight: bold;
+    text-align: center;
+}

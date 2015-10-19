@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #SPINNER
+\*------------------------------------*/
+
+/**
+ * A pure CSS loading animation.
+ */
+
+@keyframes #{$sagovau-namespace}transform-rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+.#{$sagovau-namespace}spinner,
+%spinner {
+    position: relative;
+}
+
+.#{$sagovau-namespace}spinner:before {
+    $size: $sagovau-spacing-unit-base;
+    $thickness: 4px;
+    animation: #{$sagovau-namespace}transform-rotation 1s infinite linear;
+    border: {
+        bottom: $thickness solid $sagovau-color-brand--light;
+        left: $thickness solid $sagovau-color-brand--light;
+        radius: 100%;
+        right: $thickness solid $sagovau-color-brand--light;
+        top: $thickness solid $sagovau-color-brand;
+    }
+    content: " ";
+    display: block;
+    height: $size;
+    left: 50%;
+    margin: {
+        left: -$size/2;
+        top: -$size/2;
+    }
+    position: absolute;
+    top: 50%;    
+    width: $size;
+}
+
+.#{$sagovau-namespace}spinner--large:before {
+    $size: $sagovau-spacing-unit-base--large;
+    height: $size;
+    margin: {
+        left: -$size/2;
+        top: -$size/2;
+    }
+    width: $size;
+}

@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+
+/**
+ * High-, page-level styling.
+ *
+ * Builds on the styles defined in Inuit CSS's '_base.page.scss';
+ **/
+ 
+@import "inuit-page/_base.page.scss";
+
+
+
+$sagovau-page-color-links: $sagovau-color-brand !default;
+$sagovau-page-color-hr: $sagovau-color-brand--medium-light !default;
+
+
+/**
+ * Set fonts, background colours and minimum widths.
+ **/
+
+html {
+    font-family: $sagovau-font-family-base;
+}
+
+
+body {
+    min-width: 320px;
+    position: relative;   // Make sure child elements can be positioned relative to the body's margins. 
+}
+
+
+a {
+    color: $sagovau-page-color-links;
+}
+
+
+hr,
+%#{$sagovau-namespace}horizontal-rule {
+    @extend %margin-bottom;
+    border: none;
+    border-bottom: 1px solid $sagovau-page-color-hr;
+}
+
+
+@page {
+    margin: 1cm;
+    size: A4 portrait;
+}

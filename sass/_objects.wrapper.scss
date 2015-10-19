@@ -1,0 +1,81 @@
+/*------------------------------------*\
+    #WRAPPER
+\*------------------------------------*/
+
+/**
+ * Container with max-width for ensuring content width is restricted uniformly 
+ * on large screens.
+ */
+
+// Disable all variations by default so unneeded items are not included.
+
+$sagovau-enable-wrapper--ph: false !default; // add horizontal padding
+$sagovau-enable-wrapper--ph-small: false !default; // add half-width horizontal padding
+$sagovau-enable-wrapper--ph-large: false !default; // add double-width horizontal padding
+
+$sagovau-enable-wrapper--large-and-up-ph-small: false !default; // add half-width horizontal padding on large devices
+
+
+.#{$sagovau-namespace}wrapper,
+%#{$sagovau-namespace}wrapper {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    max-width: $sagovau-max-width;
+}
+
+
+// Add horizontal padding
+
+@if $sagovau-enable-wrapper--ph == true {
+    
+    .#{$sagovau-namespace}wrapper--ph,
+    %#{$sagovau-namespace}wrapper--ph {
+        max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base;
+        padding: 0 $sagovau-spacing-unit-base;
+    }
+    
+}
+
+
+// Add small horizontal padding.
+
+@if $sagovau-enable-wrapper--ph-small == true {
+    
+    .#{$sagovau-namespace}wrapper--ph-small,
+    %#{$sagovau-namespace}wrapper--ph-small {
+        max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base--small;
+        padding: 0 $sagovau-spacing-unit-base--small;
+    }
+    
+}
+
+
+// Add large horizontal padding
+
+@if $sagovau-enable-wrapper--ph-large == true {
+        
+    .#{$sagovau-namespace}wrapper--ph-large,
+    %#{$sagovau-namespace}wrapper--ph-large {
+        max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base--large;
+        padding: 0 $sagovau-spacing-unit-base--large;
+    }
+    
+}
+
+
+// Add small horizontal padding on large-and-up devices
+
+@if $sagovau-enable-wrapper--large-and-up-ph-small == true {
+
+    .#{$sagovau-namespace}wrapper--large-and-up-ph-small {
+
+        @include media-query(large-and-up) {
+            max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base--small;
+            padding: 0 $sagovau-spacing-unit-base--small;
+        }
+        
+    }
+    
+}

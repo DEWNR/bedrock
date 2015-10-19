@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+/**
+ * rem($property, $value)
+ *
+ * Sets both rem and absolute pixel values for a given property, making it 
+ * easier to maintain compatibility with older browsers.
+ * 
+ * $property is a CSS property that can accept either a single pixel or rem
+ * value.
+ * 
+ * $value is a unitless ratio - eg 1.5.
+ */
+
+@mixin rem($property, $value) {
+    #{$property}: $value * $sagovau-font-size-base;
+    #{$property}: #{$value}rem;
+}
+
+
+
+
+
+/**
+ * ui-link
+ * 
+ * Remove the text-decoration from <a> tags, except on hover.
+ *
+ * Useful for styled UI elements, such as menus, buttons, etc.
+ **/
+
+@mixin ui-link {
+    text-decoration: none;
+    
+    &:focus, &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+/**
+ * vertical-align
+ * 
+ * Taken from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ **/
+
+@mixin vertical-align {
+    position: relative;
+    text-decoration: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+}

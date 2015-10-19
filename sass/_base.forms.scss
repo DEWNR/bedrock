@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #FORM
+\*------------------------------------*/
+
+/**
+ * Basic form styling.
+ */
+
+// Make sure a text area is appropriately sized.
+
+textarea {
+    height: 8 * $sagovau-spacing-unit-base;
+}

@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #FONTS
+\*------------------------------------*/
+
+/**
+ * Add extend-only classes for main fonts, so multiple properties can be
+ * declared in the one place.
+ */
+
+$sagovau-fonts-base-letter-spacing: null !default;
+$sagovau-fonts-highlight-letter-spacing: null !default;
+
+
+%#{$sagovau-namespace}font-base {
+    font-family: $sagovau-font-family-base;
+    
+    @if $sagovau-fonts-base-letter-spacing != null {
+        letter-spacing: $sagovau-fonts-base-letter-spacing;
+    }
+    
+}
+
+
+%#{$sagovau-namespace}font-highlight {
+    font-family: $sagovau-font-family-highlight;
+    
+    @if $sagovau-fonts-highlight-letter-spacing != null {
+        letter-spacing: $sagovau-fonts-highlight-letter-spacing;
+    }
+    
+}
