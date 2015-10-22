@@ -23,7 +23,8 @@ $inuit-base-background-color: $sagovau-color-background-base;
 
 /* = Repsonsive breakpoints = */
 
-$breakpoints: $sagovau-media-queries;
+$breakpoints: $sagovau-breakpoints;
+$media-queries: $sagovau-media-queries;
 $inuit-responsive-settings: true;
 
 

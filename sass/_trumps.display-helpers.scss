@@ -24,30 +24,26 @@ $sagovau-enable-display-helpers-responsive: false !default; // Generate mobile-f
 
 @if $sagovau-enable-display-helpers-responsive == true {
 
-    @each $breakpoint in $breakpoints {
+    @each $media-query in $sagovau-media-queries {
 
-        $alias: nth($breakpoint, 1);
+        $alias: nth($media-query, 1);
 
-        @if ($alias != "retina") {
+        @include media-query($alias) {
 
-            @include media-query($alias) {
+            .#{$sagovau-namespace}u-hidden-#{$alias} {
+                display: none !important;
+                visibility: hidden !important;
+            }
 
-                .#{$sagovau-namespace}u-hidden-#{$alias} {
-                    display: none !important;
-                    visibility: hidden !important;
-                }
-
-                .#{$sagovau-namespace}u-display-block-#{$alias} {
-                    display: block !important;
-                    visibility: visible !important;
-                }
+            .#{$sagovau-namespace}u-display-block-#{$alias} {
+                display: block !important;
+                visibility: visible !important;
+            }
 
 
-                .#{$sagovau-namespace}u-display-inline-block-#{$alias} {
-                    display: inline-block !important;
-                    visibility: visible !important;
-                }
-
+            .#{$sagovau-namespace}u-display-inline-block-#{$alias} {
+                display: inline-block !important;
+                visibility: visible !important;
             }
 
         }
@@ -95,16 +91,6 @@ $sagovau-enable-display-helpers-responsive: false !default; // Generate mobile-f
 
 .no-js .#{$sagovau-namespace}u-js-only,
 .no-js %#{$sagovau-namespace}u-js-only {  // Hide anything with the js-only class when JavaScript is disabled
-    @extend %#{$sagovau-namespace}u-hidden;
-}
-
-.retina .#{$sagovau-namespace}u-no-retina,
-.retina %#{$sagovau-namespace}u-no-retina {  // Hide anything with the no-retina class if the browser has a device pixel ratio greater than 1
-    @extend %#{$sagovau-namespace}u-hidden;
-}
-
-.no-retina .#{$sagovau-namespace}u-retina-only,
-.no-retina %#{$sagovau-namespace}u-retina-only {  // Hide anything with the retina-only class if the browser has a device pixel ratio of 1 or less
     @extend %#{$sagovau-namespace}u-hidden;
 }
 
