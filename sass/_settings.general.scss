@@ -5,7 +5,7 @@
 /**
  * WARNING
  *
- * These settings should rarely be changed directly, as this may have 
+ * These settings should rarely be changed directly, as this may have
  * far-reaching consequences. Instead, redefine variables at the
  * series/group/site level.
  **/
@@ -13,7 +13,7 @@
 /* = Namespace = */
 
 /**
- * A prefix that can be used to prevent class name collisions. Use "null" to 
+ * A prefix that can be used to prevent class name collisions. Use "null" to
  * ignore.
  **/
 
@@ -33,7 +33,7 @@ $sagovau-namespace: null;
 /* == Tint and shade percentage == */
 
 /**
- * Set the default tint/shade percentage for creating lighter/darker version 
+ * Set the default tint/shade percentage for creating lighter/darker version
  * of a colour.
  **/
 
@@ -48,9 +48,9 @@ $sagovau-color-brand: #002855;
 $sagovau-color-brand-secondary: null;
 
 
-$sagovau-color-text-base: black;
-$sagovau-color-text-reverse: white;
-$sagovau-color-background-base: white;
+$sagovau-color-text-base: #000;
+$sagovau-color-text-reverse: #fff;
+$sagovau-color-background-base: #fff;
 
 
 
@@ -58,19 +58,19 @@ $sagovau-color-background-base: white;
 
 /* == Utility colours == */
 
-$sagovau-color-success: shade(green, 20%);
+$sagovau-color-success: shade(#008000, 20%);
 
-$sagovau-color-warning: shade(orange, 20%);
+$sagovau-color-warning: shade(#ffa500, 20%);
 
-$sagovau-color-danger: shade(red, 20%);
+$sagovau-color-danger: shade(#f00, 20%);
 
 
 
 
 
 /* = Fonts =*/
- 
-$sagovau-font-family-base: "Frutiger W01",Helvetica,Arial,sans-serif;
+
+$sagovau-font-family-base: 'Frutiger W01', Helvetica, Arial, sans-serif;
 $sagovau-font-family-highlight: $sagovau-font-family-base;
 
 
@@ -102,21 +102,21 @@ $sagovau-transition-time: 0.3s;
 
 /* = Media queries = */
 
-/** 
- * This notation has been chosen as it is compatible with Inuit CSS 
+/**
+ * This notation has been chosen as it is compatible with Inuit CSS
  * `media-query()` mixin found in `_tools.responsive`.
  **/
 
 $sagovau-breakpoints: (
-    "small-and-up": "screen and (min-width: 480px)",
-    "medium-and-up": "screen and (min-width: 640px)",
-    "large-and-up": "screen and (min-width: 720px)",
-    "huge": "screen and (min-width: 1024px)"
+    'small-and-up': 'screen and (min-width: 480px)',
+    'medium-and-up': 'screen and (min-width: 640px)',
+    'large-and-up': 'screen and (min-width: 720px)',
+    'huge': 'screen and (min-width: 1024px)'
 );
 
 $sagovau-media-queries: map-merge(
     $sagovau-breakpoints,
     (
-        "retina": "(-webkit-min-device-pixel-ratio: 1.5), (-moz-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), min-resolution: 1.5dppx)"
+        'retina': '(-webkit-min-device-pixel-ratio: 1.5), (-moz-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), min-resolution: 1.5dppx)'
     )
 );

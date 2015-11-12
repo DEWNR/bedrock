@@ -9,103 +9,109 @@
 .#{$sagovau-namespace}seamless-form { }
 
     /*div*/.#{$sagovau-namespace}seamless-form__item {
-      @extend %margin-bottom;
+        @extend %margin-bottom;
     }
         /*div*/.#{$sagovau-namespace}seamless-form__label {
             display: inline-block;
             vertical-align: top;
             width: 100%;
-            
+
             @include media-query(small-and-up) {
                 width: 33.3333333%;
             }
-            
+
         }
-        
+
         /*div*/.#{$sagovau-namespace}seamless-form__input {
             display: inline-block;
             vertical-align: top;
             width: 100%;
-            
+
             @include media-query(small-and-up) {
                 padding-left: $sagovau-spacing-unit-base--small;
                 width: 66.6666666%;
             }
-            
+
             // Make sure the actual input element occupies the full width.
-            
-            input, select, textarea {
+
+            input,
+            select,
+            textarea {
                 width: 100%;
             }
-            
+
         }
-        
+
         /**
          * 1. Make sure the error is displayed by default, as Seamless form
-         *    validation will not make any changes to the error container to 
+         *    validation will not make any changes to the error container to
          *    hide or show it - it will only add content to it.
          *
          * 2. Use a variation to control error visibility for all other cases.
          **/
-        
+
         /*a, div*/.#{$sagovau-namespace}seamless-form__error {
             color: $sagovau-color-danger;
             font-weight: bold;
             text-decoration: none;
             display: block;  /* [1] */
         }
-        
+
         /*a, div*/.#{$sagovau-namespace}seamless-form__error--inactive {
             display: none;   /* [2] */
         }
-    
+
 /**
  * Because classes can't be added to labels/inputs within the Seamless CMS
  * it is necessary to use descendant selectors to target them.
  */
 
 .#{$sagovau-namespace}seamless-form--seamless {
-    
+
     // Seamless forms use tables for layout. Style them so they aren't
     // visible.
-    
-    table, th, td {
-        border: none;
+
+    table,
+    th,
+    td {
+        border: 0;
         margin: 0;
         padding: 0;
     }
-    
+
     // Make sure the table occupies the full width.
-    
+
     table {
         width: 100%;
-        
+
         // Make sure the inputs it contains do not use the full width.
-        
-        input, select, textarea {
+
+        input,
+        select,
+        textarea {
             width: auto;
         }
-        
+
         // Pad the labels appropriately.
-        
+
         label {
             padding-left: $sagovau-spacing-unit-base--small;
         }
-        
+
     }
-    
-    
+
+
     // Errors
-    
+
     .#{$sagovau-namespace}seamless-form__error {
-        
+
         // Make sure that Seamless' error messages are styled correctly
-        
-        & > a {
+
+        > a {
             color: inherit;
             text-decoration: inherit;
         }
-        
+
     }
-    
+
 }

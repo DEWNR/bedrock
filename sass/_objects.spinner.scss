@@ -27,16 +27,16 @@
         right: $thickness solid $sagovau-color-brand--light;
         top: $thickness solid $sagovau-color-brand;
     }
-    content: " ";
+    content: ' ';
     display: block;
     height: $size;
     left: 50%;
     margin: {
-        left: -$size/2;
-        top: -$size/2;
+        left: -$size / 2;
+        top: -$size / 2;
     }
     position: absolute;
-    top: 50%;    
+    top: 50%;
     width: $size;
 }
 
@@ -44,8 +44,8 @@
     $size: $sagovau-spacing-unit-base--large;
     height: $size;
     margin: {
-        left: -$size/2;
-        top: -$size/2;
+        left: -$size / 2;
+        top: -$size / 2;
     }
     width: $size;
 }

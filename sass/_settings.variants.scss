@@ -9,8 +9,8 @@
 /**
  * WARNING
  *
- * These settings should rarely be changed directly, as this may have 
- * far-reaching consequences. Instead, redefine variables at the 
+ * These settings should rarely be changed directly, as this may have
+ * far-reaching consequences. Instead, redefine variables at the
  * series/group/site level.
  **/
 
@@ -25,7 +25,7 @@ $sagovau-color-brand-secondary--light: null;
 $sagovau-color-brand-secondary--medium-light: null;
 
 @if $sagovau-color-brand-secondary != null {
-    
+
     $sagovau-color-brand-secondary--light: tint($sagovau-color-brand-secondary, $sagovau-tint-base);
     $sagovau-color-brand-secondary--medium-light: tint($sagovau-color-brand-secondary, 50%);
 
@@ -37,11 +37,11 @@ $sagovau-color-brand-secondary--medium-light: null;
 
 /* = Utility colours = */
 
-$sagovau-color-success--light: tint(green, $sagovau-tint-base) !default;
+$sagovau-color-success--light: tint(#008000, $sagovau-tint-base) !default;
 
-$sagovau-color-warning--light: tint(orange, $sagovau-tint-base) !default;
+$sagovau-color-warning--light: tint(#ffa500, $sagovau-tint-base) !default;
 
-$sagovau-color-danger--light: tint(red, $sagovau-tint-base) !default;
+$sagovau-color-danger--light: tint(#f00, $sagovau-tint-base) !default;
 
 
 
@@ -49,7 +49,7 @@ $sagovau-color-danger--light: tint(red, $sagovau-tint-base) !default;
 
 /* = Fonts = */
 
-$sagovau-font-size-base--large: ($sagovau-line-height-base + $sagovau-font-size-base)/2;
+$sagovau-font-size-base--large: ($sagovau-line-height-base + $sagovau-font-size-base) / 2;
 
 
 

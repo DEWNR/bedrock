@@ -7,8 +7,8 @@
  *
  * Builds on the styles defined in Inuit CSS's '_base.page.scss';
  **/
- 
-@import "inuit-page/_base.page.scss";
+
+@import 'inuit-page/base.page';
 
 
 
@@ -27,7 +27,7 @@ html {
 
 body {
     min-width: 320px;
-    position: relative;   // Make sure child elements can be positioned relative to the body's margins. 
+    position: relative;   // Make sure child elements can be positioned relative to the body's margins.
 }
 
 
@@ -39,7 +39,7 @@ a {
 hr,
 %#{$sagovau-namespace}horizontal-rule {
     @extend %margin-bottom;
-    border: none;
+    border: 0;
     border-bottom: 1px solid $sagovau-page-color-hr;
 }
 

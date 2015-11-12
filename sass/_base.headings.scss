@@ -7,7 +7,7 @@
  **/
 
 // Individual heading settings for h1-h6 must be defined sepeartely
- 
+
 $sagovau-headings-settings: (
     h1: $sagovau-h1-settings,
     h2: $sagovau-h2-settings,
@@ -25,13 +25,19 @@ $sagovau-enable-headings-utility-classes: false !default;  // Create utility cla
 
 // Set default heading behaviour
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     page-break-after: avoid;
-    
-    & strong, & b {
+
+    strong,
+    b {
         font-weight: inherit;    // Prevent CMS users from applying font weights within headings
     }
-    
+
 }
 
 
@@ -47,47 +53,47 @@ h1, h2, h3, h4, h5, h6 {
  *    appropriate class. (This allows other parameters, such as letter-spacing,
  *    to be set elsewhere.
  **/
- 
+
 @each $heading, $settings in $sagovau-headings-settings {   //* [1] */
-    
-    @if $heading == h1 { $heading: "h1, %alpha"; }          //* [2] */
-    
-    @else if $heading == h2 { $heading: "h2, %beta"; }      //* [2] */
-    
-    @else if $heading == h3 { $heading: "h3, %gamma"; }     //* [2] */
-    
-    @else if $heading == h4 { $heading: "h4, %delta"; }     //* [2] */
-    
-    @else if $heading == h5 { $heading: "h5, %epsilon"; }   //* [2] */
-    
-    @else if $heading == h6 { $heading: "h6, %zeta"; }      //* [2] */
+
+    @if $heading == h1 { $heading: 'h1, %alpha'; }         //* [2] */
+
+    @else if $heading == h2 { $heading: 'h2, %beta'; }      //* [2] */
+
+    @else if $heading == h3 { $heading: 'h3, %gamma'; }     //* [2] */
+
+    @else if $heading == h4 { $heading: 'h4, %delta'; }     //* [2] */
+
+    @else if $heading == h5 { $heading: 'h5, %epsilon'; }   //* [2] */
+
+    @else if $heading == h6 { $heading: 'h6, %zeta'; }      //* [2] */
 
     #{$heading} {
-    
+
         @each $property, $value in $settings {  /* [1] */
-        
+
             @if $property == font-family and $value == $sagovau-font-family-base {   /* [3] */
-            
+
                 @extend %#{$sagovau-namespace}font-base;
-            
+
             } @else if $property == font-family and $value == $sagovau-font-family-highlight {     /* [3] */
-            
+
                 @extend %#{$sagovau-namespace}font-highlight;
-            
+
             } @else if $property == font-size {
-            
+
                 @include inuit-font-size($value);
-            
+
             } @else {
-            
+
                 #{$property}: $value;
-            
+
             }
-            
+
         }
-        
+
     }
-    
+
 }
 
 
@@ -118,5 +124,5 @@ h1, h2, h3, h4, h5, h6 {
     .#{$sagovau-namespace}zeta {
         @extend %#{$sagovau-namespace}zeta;
     }
-    
+
 }

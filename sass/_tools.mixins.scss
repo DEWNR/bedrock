@@ -5,12 +5,12 @@
 /**
  * rem($property, $value)
  *
- * Sets both rem and absolute pixel values for a given property, making it 
+ * Sets both rem and absolute pixel values for a given property, making it
  * easier to maintain compatibility with older browsers.
- * 
+ *
  * $property is a CSS property that can accept either a single pixel or rem
  * value.
- * 
+ *
  * $value is a unitless ratio - eg 1.5.
  */
 
@@ -25,7 +25,7 @@
 
 /**
  * ui-link
- * 
+ *
  * Remove the text-decoration from <a> tags, except on hover.
  *
  * Useful for styled UI elements, such as menus, buttons, etc.
@@ -33,8 +33,9 @@
 
 @mixin ui-link {
     text-decoration: none;
-    
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         text-decoration: underline;
     }
 }
@@ -45,7 +46,7 @@
 
 /**
  * vertical-align
- * 
+ *
  * Taken from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
  **/
 

@@ -16,7 +16,7 @@ $sagovau-enable-dewnrger-italic-700: true !default;
 
 
 @if ($sagovau-dewnrger-normal-400 == true) {
-    
+
     @font-face {
         font-family: Dewnrger;
         font-style: normal;
@@ -28,36 +28,36 @@ $sagovau-enable-dewnrger-italic-700: true !default;
 
 
 @if ($sagovau-dewnrger-italic-400 == true) {
-    
+
     @font-face {
         font-family: Dewnrger;
         font-style: italic;
         font-weight: 400;
         src: url(#{$sagovau-path-fonts}Dewnrger46Italic.ttf);
     }
-    
+
 }
 
 
 @if ($sagovau-dewnrger-normal-700 == true) {
-    
+
     @font-face {
         font-family: Dewnrger;
         font-style: normal;
         font-weight: 700;
         src: url(#{$sagovau-path-fonts}Dewnrger65Bold.ttf);
     }
-    
+
 }
 
 
 @if ($sagovau-dewnrger-italic-700 == true) {
-    
+
     @font-face {
         font-family: Dewnrger;
         font-style: italic;
         font-weight: 700;
         src: url(#{$sagovau-path-fonts}Dewnrger66BoldItalic.ttf);
     }
-    
+
 }

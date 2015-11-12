@@ -29,201 +29,206 @@ $sagovau-enable-color-scheme--gradient: false !default;
 // Primary brand colour
 
 @if ($sagovau-enable-color-scheme--brand == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--brand
     %#{$sagovau-namespace}color-scheme--brand {
-        
+
         & .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-brand !important;
         }
-        
+
     }
-    
+
     @if ($sagovau-enable-color-scheme--brand-light == true) {
-      
-      .#{$sagovau-namespace}color-scheme--brand-light {
-          @extend %#{$sagovau-namespace}color-scheme--brand;
-          
-          background-color: $sagovau-color-brand--light !important;
-      }
-      
+
+        .#{$sagovau-namespace}color-scheme--brand-light {
+            @extend %#{$sagovau-namespace}color-scheme--brand;
+
+            background-color: $sagovau-color-brand--light !important;
+        }
+
     }
-    
+
 }
 
 @if ($sagovau-enable-color-scheme--brand-reverse == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--brand-reverse {
         background-color: $sagovau-color-brand !important;
-        
-        &, * {
+
+        &,
+        * {
             color: $sagovau-color-text-reverse !important;
         }
-        
+
         .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-brand--light !important;
         }
-        
+
     }
-    
+
 }
 
 
 // Secondary brand colour
 
 @if ($sagovau-enable-color-scheme--brand-secondary == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--brand-secondary
     %#{$sagovau-namespace}color-scheme--brand-secondary {
-        
+
         & .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-brand-secondary !important;
         }
-        
+
     }
-    
+
     @if ($sagovau-enable-color-scheme--brand-secondary-light == true) {
-      
+
         .#{$sagovau-namespace}color-scheme--brand-secondary-light {
             @extend %#{$sagovau-namespace}color-scheme--brand-secondary;
-            
+
             background-color: $sagovau-color-brand-secondary--light !important;
         }
-      
+
     }
-    
+
 }
 
 @if ($sagovau-enable-color-scheme--brand-secondary-reverse == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--brand-secondary-reverse {
         background-color: $sagovau-color-brand-secondary !important;
-        
-        &, * {
+
+        &,
+        * {
             color: $sagovau-color-text-reverse !important;
         }
-        
+
         .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-brand-secondary--light !important;
         }
-        
+
     }
-    
+
 }
 
 
 // Success
 
 @if ($sagovau-enable-color-scheme--success == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--success {
         background-color: $sagovau-color-success--light !important;
-        
+
         & .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-success !important;
         }
-        
+
     }
-    
+
 }
 
 @if ($sagovau-enable-color-scheme--success-reverse == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--success-reverse {
         background-color: $sagovau-color-success !important;
-        
-        &, * {
+
+        &,
+        * {
             color: $sagovau-color-text-reverse !important;
         }
-        
+
         .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-success--light !important;
         }
-        
+
     }
-    
+
 }
 
 
 // Warning
 
 @if ($sagovau-enable-color-scheme--warning == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--warning {
         background-color: $sagovau-color-warning--light !important;
-        
+
         & .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-warning !important;
         }
-        
+
     }
-    
+
 }
 
 @if ($sagovau-enable-color-scheme--warning-reverse == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--warning-reverse {
         background-color: $sagovau-color-warning !important;
-        
-        &, * {
+
+        &,
+        * {
             color: $sagovau-color-text-reverse !important;
         }
-        
+
         .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-warning--light !important;
         }
-        
+
     }
-    
+
 }
 
 
 // Danger
 
 @if ($sagovau-enable-color-scheme--danger == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--danger {
         background-color: $sagovau-color-danger--light !important;
-        
+
         & .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-danger !important;
         }
-        
+
     }
-    
+
 }
 
 @if ($sagovau-enable-color-scheme--danger-reverse == true) {
-    
+
     .#{$sagovau-namespace}color-scheme--danger-reverse {
         background-color: $sagovau-color-danger !important;
-        
-        &, * {
+
+        &,
+        * {
             color: $sagovau-color-text-reverse !important;
         }
-        
+
         .#{$sagovau-namespace}color-scheme__highlight {
             color: $sagovau-color-danger--light !important;
         }
-        
+
     }
-    
+
 }
 
 
 // Gradient overlay
 
 @if ($sagovau-enable-color-scheme--gradient == true) {
-    
-    .#{$sagovau-namespace}color-scheme-gradient {        
+
+    .#{$sagovau-namespace}color-scheme-gradient {
         $color-dark: rgba(0, 0, 0, 0.06);
         $color-light: rgba(255, 255, 255, 0.03);
         $range: 50%;
-        
-        background-image: radial-gradient( at top left, $color-dark 0, transparent $range),
-                            radial-gradient( at bottom right, $color-dark 0, transparent $range),
-                            radial-gradient( at top right, $color-light 0, transparent $range),
-                            radial-gradient( at bottom left, $color-light 0, transparent $range) !important;
+
+        background-image: radial-gradient(at top left, $color-dark 0, transparent $range),
+                          radial-gradient(at bottom right, $color-dark 0, transparent $range),
+                          radial-gradient(at top right, $color-light 0, transparent $range),
+                          radial-gradient(at bottom left, $color-light 0, transparent $range) !important;
     }
-    
+
 }

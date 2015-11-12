@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 /**
- * Container with max-width for ensuring content width is restricted uniformly 
+ * Container with max-width for ensuring content width is restricted uniformly
  * on large screens.
  */
 
@@ -29,39 +29,39 @@ $sagovau-enable-wrapper--large-and-up-ph-small: false !default; // add half-widt
 // Add horizontal padding
 
 @if $sagovau-enable-wrapper--ph == true {
-    
+
     .#{$sagovau-namespace}wrapper--ph,
     %#{$sagovau-namespace}wrapper--ph {
         max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base;
         padding: 0 $sagovau-spacing-unit-base;
     }
-    
+
 }
 
 
 // Add small horizontal padding.
 
 @if $sagovau-enable-wrapper--ph-small == true {
-    
+
     .#{$sagovau-namespace}wrapper--ph-small,
     %#{$sagovau-namespace}wrapper--ph-small {
         max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base--small;
         padding: 0 $sagovau-spacing-unit-base--small;
     }
-    
+
 }
 
 
 // Add large horizontal padding
 
 @if $sagovau-enable-wrapper--ph-large == true {
-        
+
     .#{$sagovau-namespace}wrapper--ph-large,
     %#{$sagovau-namespace}wrapper--ph-large {
         max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base--large;
         padding: 0 $sagovau-spacing-unit-base--large;
     }
-    
+
 }
 
 
@@ -75,7 +75,7 @@ $sagovau-enable-wrapper--large-and-up-ph-small: false !default; // add half-widt
             max-width: $sagovau-max-width + 2 * $sagovau-spacing-unit-base--small;
             padding: 0 $sagovau-spacing-unit-base--small;
         }
-        
+
     }
-    
+
 }
