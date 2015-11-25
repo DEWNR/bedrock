@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+
+.#{$sagovau-namespace}layout,
+%#{$sagovau-namespace}layout {
+    font-size: 0; // zero out font to remove space between inline-block
+}
+
+.#{$sagovau-namespace}layout__item,
+%#{$sagovau-namespace}layout_item {
+    font-size: 0; // zero out font to remove space between inline-block
+}
