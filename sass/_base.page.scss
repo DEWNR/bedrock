@@ -30,6 +30,12 @@ body {
     position: relative;   // Make sure child elements can be positioned relative to the body's margins.
 }
 
+article,
+aside,
+nav {
+    font-size: $sagovau-font-size-base;
+}
+
 
 a {
     color: $sagovau-page-color-links;

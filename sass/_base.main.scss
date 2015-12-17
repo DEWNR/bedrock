@@ -13,5 +13,7 @@ main {
     @if $sagovau-main-color-background != null {
         background-color: $sagovau-main-color-background;
     }
+
+    font-size: $sagovau-font-size-base;
     min-height: 480px;
 }
