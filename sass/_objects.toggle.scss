@@ -56,7 +56,7 @@ $sagovau-enable-toggle--brand-light: false !default;
             // toggle
 
             .#{$sagovau-namespace}toggle.is-active & {
-                opacity: \0;  /* [3] */
+                opacity: 0;  /* [3] */
             }
 
         }
