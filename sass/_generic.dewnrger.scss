@@ -15,7 +15,7 @@ $sagovau-enable-dewnrger-normal-700: true !default;
 $sagovau-enable-dewnrger-italic-700: true !default;
 
 
-@if ($sagovau-dewnrger-normal-400 == true) {
+@if ($sagovau-enable-dewnrger-normal-400 == true) {
 
     @font-face {
         font-family: Dewnrger;
@@ -27,7 +27,7 @@ $sagovau-enable-dewnrger-italic-700: true !default;
 }
 
 
-@if ($sagovau-dewnrger-italic-400 == true) {
+@if ($sagovau-enable-dewnrger-italic-400 == true) {
 
     @font-face {
         font-family: Dewnrger;
@@ -39,7 +39,7 @@ $sagovau-enable-dewnrger-italic-700: true !default;
 }
 
 
-@if ($sagovau-dewnrger-normal-700 == true) {
+@if ($sagovau-enable-dewnrger-normal-700 == true) {
 
     @font-face {
         font-family: Dewnrger;
@@ -51,7 +51,7 @@ $sagovau-enable-dewnrger-italic-700: true !default;
 }
 
 
-@if ($sagovau-dewnrger-italic-700 == true) {
+@if ($sagovau-enable-dewnrger-italic-700 == true) {
 
     @font-face {
         font-family: Dewnrger;
