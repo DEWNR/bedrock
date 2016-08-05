@@ -13,7 +13,7 @@
 /* = Namespace = */
 
 /**
- * A prefix that can be used to prevent class name collisions. Use "null" to
+ * A prefix that can be used to prevent class name collisions. Use 'null' to
  * ignore.
  **/
 
@@ -70,7 +70,7 @@ $sagovau-color-danger: shade(#f00, 20%);
 
 /* = Fonts =*/
 
-$sagovau-font-family-base: "Frutiger W01", Helvetica, Arial, sans-serif;
+$sagovau-font-family-base: 'Frutiger W01', Helvetica, Arial, sans-serif;
 $sagovau-font-family-highlight: $sagovau-font-family-base;
 
 
@@ -108,15 +108,15 @@ $sagovau-transition-time: 0.3s;
  **/
 
 $sagovau-breakpoints: (
-    "small-and-up": "screen and (min-width: 480px)",
-    "medium-and-up": "screen and (min-width: 640px)",
-    "large-and-up": "screen and (min-width: 720px)",
-    "huge": "screen and (min-width: 1024px)"
+    'small-and-up': 'screen and (min-width: 480px)',
+    'medium-and-up': 'screen and (min-width: 640px)',
+    'large-and-up': 'screen and (min-width: 720px)',
+    'huge': 'screen and (min-width: 1024px)'
 );
 
 $sagovau-media-queries: map-merge(
     $sagovau-breakpoints,
     (
-        "retina": "(-webkit-min-device-pixel-ratio: 1.5), (-moz-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), min-resolution: 1.5dppx)"
+        'retina': '(-webkit-min-device-pixel-ratio: 1.5), (-moz-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), min-resolution: 1.5dppx)'
     )
 );

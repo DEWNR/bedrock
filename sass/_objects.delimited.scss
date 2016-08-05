@@ -30,7 +30,7 @@ $sagovau-enable-delimited--pipe:           false !default;
 @if $sagovau-enable-delimited--comma == true {
 
     .#{$sagovau-namespace}delimited--comma + .#{$sagovau-namespace}delimited:before {
-        content: ", ";
+        content: ', ';
     }
 
 }
@@ -38,7 +38,7 @@ $sagovau-enable-delimited--pipe:           false !default;
 @if $sagovau-enable-delimited--forward-slash == true {
 
     .#{$sagovau-namespace}delimited--forward-slash + .#{$sagovau-namespace}delimited:before {
-        content: "/ ";
+        content: '/ ';
     }
 
 }
@@ -46,7 +46,7 @@ $sagovau-enable-delimited--pipe:           false !default;
 @if $sagovau-enable-delimited--gt == true {
 
     .#{$sagovau-namespace}delimited--gt + .#{$sagovau-namespace}delimited:before {
-        content: "> ";
+        content: '> ';
     }
 
 }
@@ -54,7 +54,7 @@ $sagovau-enable-delimited--pipe:           false !default;
 @if $sagovau-enable-delimited--pipe == true {
 
     .#{$sagovau-namespace}delimited--pipe + .#{$sagovau-namespace}delimited:before {
-        content: "| ";
+        content: '| ';
     }
 
 }

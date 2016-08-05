@@ -26,8 +26,8 @@
         display: inline-block;   /* [2] */
     }
 
-    &:after {   /* [3] */
-        content: "";
+    &::after {   /* [3] */
+        content: '';
         display: inline-block;
         width: 100%;
     }
